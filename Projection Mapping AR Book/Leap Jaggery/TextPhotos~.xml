@@ -1,0 +1,73 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta37.dtd" >
+   <PATCH nodename="C:\Users\AyeChan\Desktop\vvvv_50beta37_x86\SaveFiles beta 37x86\Interactive Projection Map Book\Leap Jaggery\TextPhotos.v4p" filename="C:\Users\JL\Dropbox\P_I\Programmierung\Patches\2_2_02_HT_Fiducialmarker_JL_20121026\subpatches\TextFlag.v4p" systemname="TextFlag" scrollx="0" scrolly="1800">
+   <BOUNDS height="10455" left="4050" top="2115" type="Window" width="16005">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="36.0.0">
+   </PACK>
+   <NODE componentmode="InABox" id="100214" nodename="IOBox (Node)" systemname="IOBox (Node)">
+   <BOUNDS height="0" left="1620" top="8100" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="1020" left="1620" top="8100" type="Box" width="585">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Layer">
+   </PIN>
+   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="100357">
+   <BOUNDS type="Node" left="2040" top="7620" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer Template Count" slicecount="1" values="8">
+   </PIN>
+   <PIN pinname="Layer 1" visible="1">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Layer 3" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="100357" srcpinname="Layer" dstnodeid="100214" dstpinname="Input Node">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="100363">
+   <BOUNDS type="Box" left="2955" top="5760" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2955" top="5760" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <PACK Name="dx11" Version="1.3.1">
+   </PACK>
+   <NODE systemname="JaggeryText1" filename="%VVVV%\save files 32 bit\Interactive Projection Map Book\Leap Jaggery\JaggeryText1.v4p" nodename="%VVVV%\save files 32 bit\Interactive Projection Map Book\Leap Jaggery\JaggeryText1.v4p" componentmode="Hidden" id="100366">
+   <BOUNDS type="Node" left="2010" top="6810" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Size" visible="1" slicecount="1" values="200">
+   </PIN>
+   <PIN pinname="Width [px] (Multiline Mode)" visible="1" slicecount="1" values="3952">
+   </PIN>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="4425" top="9960" width="15525" height="6000">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="100363" srcpinname="Y Output Value" dstnodeid="100366" dstpinname="Enabled">
+   </LINK>
+   <LINK srcnodeid="100366" srcpinname="Layer" dstnodeid="100357" dstpinname="Layer 1">
+   </LINK>
+   </PATCH>

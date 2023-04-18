@@ -1,0 +1,311 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta37.dtd" >
+   <PATCH nodename="C:\Users\AyeChan\Desktop\vvvv_50beta37_x86\SaveFiles beta 37x86\Interactive Projection Map Book\Leap ImageGallery\KuthodawText1.v4p" scrollx="945" scrolly="360" systemname="KuthodawText" filename="C:\Users\AyeChan\Desktop\FYP-Degree\vvvv_50beta36_x86\save files 32 bit\Interactive Projection Map Book\Leap ImageGallery\KuthodawText.v4p">
+   <BOUNDS type="Window" left="5670" top="4605" width="9000" height="5715">
+   </BOUNDS>
+   <NODE componentmode="InABox" id="9" nodename="IOBox (Node)" systemname="IOBox (Node)">
+   <BOUNDS height="0" left="2235" top="5985" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="240" left="2235" top="5985" type="Box" width="795">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Layer">
+   </PIN>
+   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" id="8" nodename="Text (EX9)" systemname="Text (EX9)">
+   <BOUNDS height="270" left="2250" top="5340" type="Node" width="3540">
+   </BOUNDS>
+   <PIN pinname="Text">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Quality" slicecount="1" values="Antialiased">
+   </PIN>
+   <PIN pinname="Show Brush" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Horizontal Align">
+   </PIN>
+   <PIN pinname="Text Rendering Mode">
+   </PIN>
+   <PIN pinname="Width [px] (Multiline Mode)" visible="1">
+   </PIN>
+   <PIN pinname="Transform" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" visible="1" values="195">
+   </PIN>
+   <PIN pinname="Color" slicecount="1" visible="1" values="|0.00000,0.00835,0.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Font">
+   </PIN>
+   <PIN pinname="Render State" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Enabled" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Vertical Align" visible="1">
+   </PIN>
+   <PIN pinname="Brush Color" visible="1" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="7" nodename="IOBox (String)" systemname="IOBox (String)">
+   <BOUNDS height="0" left="2700" top="1515" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="1395" left="2700" top="1515" type="Box" width="4470">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Input String" slicecount="1" values="|The Ananda Temple, located in Bagan, Myanmar is a Buddhist temple built in 1105 AD during the reign of King Kyanzittha of the Pagan Dynasty. It is one of four surviving temples in Bagan.|">
+   </PIN>
+   <PIN encoded="0" pinname="Default" slicecount="1" values="vvvv">
+   </PIN>
+   <PIN encoded="0" pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Text">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="8" dstpinname="Text" srcnodeid="7" srcpinname="Output String">
+   </LINK>
+   <NODE componentmode="InABox" id="6" nodename="IOBox (Enumerations)" systemname="IOBox (Enumerations)">
+   <BOUNDS height="0" left="4635" top="3540" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="240" left="4635" top="3540" type="Box" width="855">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" values="Left">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Horizontal Align|">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="8" dstpinname="Horizontal Align" srcnodeid="6" srcpinname="Output Enum">
+   </LINK>
+   <NODE componentmode="InABox" id="5" nodename="IOBox (Enumerations)" systemname="IOBox (Enumerations)">
+   <BOUNDS height="0" left="5085" top="4140" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="240" left="5085" top="4140" type="Box" width="1815">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" values="MultiLineWordWrap">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Text Rendering Mode|">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="8" dstpinname="Text Rendering Mode" srcnodeid="5" srcpinname="Output Enum">
+   </LINK>
+   <NODE componentmode="InABox" id="4" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="5505" top="4740" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="240" left="5505" top="4740" type="Box" width="795">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="5000">
+   </PIN>
+   <PIN encoded="0" pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="4000">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Width [px] (Multiline Mode)|">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="8" dstpinname="Width [px] (Multiline Mode)" srcnodeid="4" srcpinname="Y Output Value">
+   </LINK>
+   <NODE componentmode="InABox" id="1" nodename="IOBox (Enumerations)" systemname="IOBox (Enumerations)">
+   <BOUNDS height="0" left="2895" top="3540" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="240" left="2895" top="3540" type="Box" width="930">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" values="Verdana">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="Font">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="8" dstpinname="Font" srcnodeid="1" srcpinname="Output Enum">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Layer" dstnodeid="9" dstpinname="Input Node">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="0" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3600" top="4665" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3600" top="4665" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="300">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Size">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Y Output Value" dstnodeid="8" dstpinname="Size">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="11" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="7275" top="5010" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7275" top="5010" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="8" dstpinname="Enabled">
+   </LINK>
+   <PACK Name="addonpack" Version="36.0.0">
+   </PACK>
+   <PACK Name="dx11" Version="1.3.1">
+   </PACK>
+   <NODE systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" id="19">
+   <BOUNDS type="Node" left="1140" top="1605" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="TranslateX" visible="1">
+   </PIN>
+   <PIN pinname="ScaleX" visible="1">
+   </PIN>
+   <PIN pinname="ScaleY" visible="1">
+   </PIN>
+   <PIN pinname="TranslateY" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="19" srcpinname="Transform Out" dstnodeid="8" dstpinname="Transform">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="20">
+   <BOUNDS type="Box" left="930" top="645" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="930" top="645" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-1.2">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="20" srcpinname="Y Output Value" dstnodeid="19" dstpinname="TranslateX">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="21">
+   <BOUNDS type="Box" left="3510" top="540" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3510" top="540" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.57">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="ScaleY">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="21" srcpinname="Y Output Value" dstnodeid="19" dstpinname="ScaleY">
+   </LINK>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="22">
+   <BOUNDS type="Box" left="7350" top="2910" width="1590" height="270">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7350" top="2910" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="Center">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="Center">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="22" srcpinname="Output Enum" dstnodeid="8" dstpinname="Vertical Align">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="26">
+   <BOUNDS type="Box" left="2040" top="495" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2040" top="495" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.54">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="26" srcpinname="Y Output Value" dstnodeid="19" dstpinname="TranslateY">
+   </LINK>
+   <NODE systemname="IOBox (Color)" nodename="IOBox (Color)" componentmode="InABox" id="27">
+   <BOUNDS type="Node" left="4365" top="8250" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4365" top="8250" width="2250" height="480">
+   </BOUNDS>
+   <PIN pinname="Chooser Style" slicecount="1" values="RGBASlider">
+   </PIN>
+   <PIN pinname="Color Input" slicecount="1" values="|0.00000,0.00835,0.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Color)" nodename="IOBox (Color)" componentmode="InABox" id="28">
+   <BOUNDS type="Node" left="4155" top="7485" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4155" top="7485" width="2250" height="480">
+   </BOUNDS>
+   <PIN pinname="Chooser Style" slicecount="1" values="RGBASlider">
+   </PIN>
+   <PIN pinname="Color Input" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="33">
+   <BOUNDS type="Box" left="3675" top="5925" width="2250" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3675" top="5925" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.00000,0.00835,0.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Color">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="33" srcpinname="Color Output" dstnodeid="8" dstpinname="Color">
+   </LINK>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="36">
+   <BOUNDS type="Box" left="6090" top="5835" width="2250" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6090" top="5835" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Brush Color|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="36" srcpinname="Color Output" dstnodeid="8" dstpinname="Brush Color">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="37">
+   <BOUNDS type="Box" left="4230" top="795" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4230" top="795" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.73">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="ScaleX">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="37" srcpinname="Y Output Value" dstnodeid="19" dstpinname="ScaleX">
+   </LINK>
+   </PATCH>
